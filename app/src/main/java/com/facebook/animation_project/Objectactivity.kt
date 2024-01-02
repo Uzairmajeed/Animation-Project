@@ -61,7 +61,6 @@ class Objectactivity : AppCompatActivity() {
                     // Optional: Handle onAnimationRepeat if needed
                 }
             })
-
             // Start the move-right animation
             moveRightAnimator.start()
         }

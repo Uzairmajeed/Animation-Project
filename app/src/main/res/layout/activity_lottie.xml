@@ -2,20 +2,53 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#23000000"
     tools:context=".LottieActivity">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/handshake"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/Caranim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="82dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/navbackbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_fileName="CarAnimation.json"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/handshakeanim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="82dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/navbackbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_fileName="SplashAnimation.json"
+        app:lottie_loop="true" />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/navbackbutton"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/baseline_change_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handshakeanim" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

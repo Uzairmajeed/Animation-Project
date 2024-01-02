@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Animation_Project" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="App" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -16,6 +16,7 @@
         <item name="android:statusBarColor">#0A8A74</item>
 
     </style>
+
 
     <style name="Theme.Animation_Project" parent="Base.Theme.Animation_Project" />
 </resources>

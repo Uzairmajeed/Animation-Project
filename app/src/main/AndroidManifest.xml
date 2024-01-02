@@ -10,17 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Animation_Project"
+        android:theme="@style/App"
         tools:targetApi="31">
         <activity
             android:name=".LottieActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/App"/>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/App"/>
         <activity
             android:name=".Objectactivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/App"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
