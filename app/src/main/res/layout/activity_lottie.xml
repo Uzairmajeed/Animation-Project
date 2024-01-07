@@ -8,6 +8,15 @@
     android:background="#23000000"
     tools:context=".LottieActivity">
 
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/navigation_next"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/baseline_navigate_next_24"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/Caranim"
         android:layout_width="match_parent"

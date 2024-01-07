@@ -1,11 +1,15 @@
 package com.facebook.animation_project
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.transition.TransitionManager
 import com.facebook.animation_project.databinding.ActivityLottieBinding
 import com.google.android.material.transition.MaterialSharedAxis
+import androidx.transition.TransitionInflater
+import androidx.core.app.ActivityOptionsCompat
+import androidx.transition.Scene
 
 class LottieActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLottieBinding
@@ -40,5 +44,11 @@ class LottieActivity : AppCompatActivity() {
                 binding.handshakeanim.playAnimation()
             }
         }
+
+        binding.navigationNext.setOnClickListener {
+           val intent=Intent(this,CallerDesign::class.java)
+            startActivity(intent)
+        }
+
     }
 }

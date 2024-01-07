@@ -13,17 +13,24 @@
         android:theme="@style/App"
         tools:targetApi="31">
         <activity
+            android:name=".CallerDesign"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".LottieActivity"
             android:exported="false"
-            android:theme="@style/App"/>
+            android:theme="@style/App"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/App"/>
+            android:theme="@style/App"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Objectactivity"
             android:exported="false"
-            android:theme="@style/App"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/App" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
